@@ -1,27 +1,18 @@
-const scores = [
-  {
-    name: 'John',
-    score: 30,
-  },
-  {
-    name: 'shoni',
-    score: 25,
-  },
-  {
-    name: 'mpho',
-    score: 20,
-  },
-  {
-    name: 'gundo',
-    score: 17,
-  },
-  {
-    name: 'hunny',
-    score: 15,
-  },
-  {
-    name: 'rotshidzwa',
-    score: 10,
-  },
-];
-export default scores;
+import { arrangeData } from './displayScore.js';
+
+const displayList = document.querySelector('.scores');
+
+const displayScores = () => {
+  displayList.innerHTML = '';
+  arrangeData().then((result) => {
+    const orderScores = result.result.sort((a, b) => b.score - a.score);
+    orderScores.forEach((score) => {
+      const li = document.createElement('li');
+      li.innerHTML = `<li class = "score-item"> ${score.user}: ${score.score}</li>`;
+      li.style.listStyle = 'none';
+      displayList.appendChild(li);
+    });
+  });
+};
+
+export default displayScores;

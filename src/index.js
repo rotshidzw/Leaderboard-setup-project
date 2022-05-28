@@ -1,5 +1,27 @@
 import './style.css';
 
-import showScores from './modules/displayScore.js';
+import { showData } from './modules/displayScore.js';
+import displayScores from './modules/score.js';
 
-document.addEventListener('DOMContentLoaded', showScores);
+const refreshBtn = document.querySelector('.refresh-btn');
+const submitBtn = document.querySelector('#submit-btn');
+const player = document.getElementById('name');
+const score = document.getElementById('score');
+
+window.addEventListener('DOMContentLoaded', () => {
+  displayScores();
+
+  refreshBtn.addEventListener('click', () => {
+    displayScores();
+  });
+
+  submitBtn.addEventListener('click', () => {
+    if (player.value.length === 0) {
+      return;
+    }
+
+    showData(player.value, score.value);
+    player.value = '';
+    score.value = '';
+  });
+});
