@@ -1,1 +1,143 @@
-/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  list-style: none;
+  background-color: rgb(103, 103, 252);
+}
+
+.main-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid black; */
+}
+
+h1 {
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 30px;
+  position: relative;
+  color: #f86868;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+
+.column1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.scores {
+  list-style: none;
+  border: 3px solid;
+  margin-top: 30px;
+}
+
+.display-section {
+  border: 1px solid black;
+  width: inherit;
+  margin-top: 22px;
+}
+
+.score-item {
+  padding: 2px;
+  font-family: arial, sans-serif;
+}
+
+.refresh-btn {
+  padding: 4px;
+  width: 80px;
+  border: 2px solid;
+  box-shadow: 4px 3px 1px 1px;
+}
+
+.recent-score-list ul li:nth-child(even) {
+  background: rgba(227, 227, 227, 0.836);
+}
+
+h3 {
+  font-size: 28px;
+  font-family: arial, sans-serif;
+}
+
+.adding-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.input-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  outline: none;
+  padding: 2px;
+  border: 3px solid;
+  font-family: arial, sans-serif;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+#submit-btn {
+  margin-left: 124px;
+  padding: 4px;
+  width: 80px;
+  border: 2px solid;
+  box-shadow: 4px 3px 1px 1px;
+}
