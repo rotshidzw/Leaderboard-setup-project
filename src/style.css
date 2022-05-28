@@ -7,9 +7,24 @@
 }
 
 body {
-  list-style: none;
-  font-family: 'Roboto', sans-serif;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .main-content {
   width: 80%;
@@ -28,9 +43,20 @@ h1 {
   padding-left: 20px;
   padding-top: 30px;
   position: relative;
-  top: -9px;
-  left: -186px;
-  font-size: 40px;
+  color: #1f1111;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  text-decoration: underline;     
+  text-decoration-color: red;   
+}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .content {
@@ -64,6 +90,8 @@ h1 {
 
 .scores {
   list-style: none;
+  border: 3px solid;
+  margin-top: 30px;
 }
 
 .display-section {
@@ -74,19 +102,23 @@ h1 {
 
 .score-item {
   padding: 2px;
+  font-family: arial;
 }
 
 .refresh-btn {
   padding: 4px;
-  border: 0;
-  box-shadow: 4px 4px 4px 4px;
+  width: 80px;
+  border: 2px solid;
+  box-shadow: 4px 3px 1px 1px;
 }
 
-.score-item:nth-child(odd) { background-color: lightgrey; }
-.score-item:nth-child(2n) { background-color: white; }
+.recent-score-list ul li:nth-child(even) {
+  background: rgba(227, 227, 227, 0.836);
+}
 
 h3 {
   font-size: 28px;
+  font-family: arial;
 }
 
 .adding-data {
@@ -108,11 +140,19 @@ h3 {
 input {
   outline: none;
   padding: 2px;
+  border: 3px solid;
+  font-family: arial;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
 }
 
 #submit-btn {
-  padding: 4px;
-  border: 0;
-  box-shadow: 4px 1px 4px 2px;
   margin-left: 124px;
+  padding: 4px;
+  width: 80px;
+  border: 2px solid;
+  box-shadow: 4px 3px 1px 1px;
 }
