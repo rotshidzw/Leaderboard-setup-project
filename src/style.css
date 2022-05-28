@@ -7,24 +7,9 @@
 }
 
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+  list-style: none;
+  background-color: rgb(103, 103, 252);
 }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 
 .main-content {
   width: 80%;
@@ -43,14 +28,14 @@ h1 {
   padding-left: 20px;
   padding-top: 30px;
   position: relative;
-  color: #1f1111;
+  color: #f86868;
   font-family: arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 1px;
   margin-bottom: 1px;
-  text-decoration: underline;     
-  text-decoration-color: red;   
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 h2 {
@@ -102,7 +87,7 @@ h2 {
 
 .score-item {
   padding: 2px;
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
 .refresh-btn {
@@ -118,7 +103,7 @@ h2 {
 
 h3 {
   font-size: 28px;
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
 .adding-data {
@@ -141,7 +126,7 @@ input {
   outline: none;
   padding: 2px;
   border: 3px solid;
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
 ::placeholder {
