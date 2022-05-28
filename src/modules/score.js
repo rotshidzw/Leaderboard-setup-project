@@ -1,4 +1,3 @@
-
 const scores = [
   {
     name: 'John',
