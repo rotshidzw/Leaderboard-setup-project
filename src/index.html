@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
 </head>
+
 <body>
-  
+    <main class="main-content">
+
+        <section class="content">
+            <header>
+
+                <h1>Leaderboard</h1>
+            </header>
+
+            <div class="column1">
+
+             <div class="display-column2">
+                <div class="first-line">
+                    <h2>Recent scores</h2>
+                    <button type="button" class="refresh-btn">Refresh</button>
+                </div>
+                <div class="recent-score-list">
+                  <ul class="scores">
+                      
+                  </ul>
+                </div>
+             </div>
+                <div class="adding-data">
+                    <h3>Add your score</h3>
+                    <div class="input-boxes">
+                        <input id="name" type="text" name="name" placeholder="Your name" required>
+                        <input id="score" type="number" placeholder="Your score" required>
+                        <button type="button" id="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
