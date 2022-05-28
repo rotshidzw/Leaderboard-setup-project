@@ -1,21 +1,16 @@
-const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
+import scores from './score.js';
 
-const arrangeData = async () => {
-  const response = await fetch(URL);
-  const scores = await response.json();
-  return scores;
-};
-
-const showData = async (player, scores) => {
-  const answer = await fetch(URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ user: player, score: scores }),
+const displayScores = document.querySelector('.scores');
+const showScores = () => {
+  scores.forEach((goal, index) => {
+    let listTag = '';
+    listTag = `
+    <li class="score-item" id="${index}">${goal.name}: ${goal.score}</li>
+`;
+    displayScores.innerHTML += listTag;
   });
-  const score = answer.json();
-  return score;
+
+  return displayScores;
 };
 
-export { arrangeData, showData };
+export default showScores;
