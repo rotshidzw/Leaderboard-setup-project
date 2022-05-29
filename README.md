@@ -1,54 +1,56 @@
-# Leaderboard
- Leaderboard list app is JavaScript project using webpack and ES6 features, notably modules and use HTML5 and CSS3.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# leaderboard-setup-project
+
 
 ## Built With
 
-- HTML, CSS & JS
-- Hint, Stylelint, Eslint
+- HTML&CSS&JAVACSRIPT
+- VISUAL BASIC CODE
+- npm install
 
-## Live Demo
+## Live Demo (if available)
 
-[Live]( https://ghilain.github.io/Leaderboard/dist/index.html)
+
 
 
 ## Getting Started
 
+
+
+Install
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+Open terminal
+Clone this project by the command git clone https://github.com/rotshidzw/to-do-list
 
-```
-node and npm
-```
-
-### Setup
-
-```
-- git clone the repo
-- cd into it repo name
-- npm install
-```
-
-### Install
-
-```
-open the html file
-```
+cd <clone> folder
+Run npm start in your local browser or using Live Server in Visual Studio Code.
 
 ## Authors
 
-👤 **Ghilain Ishimwe**
+👤 **Author1**
 
-- GitHub: [Ghilain Iishimwe](https://github.com/Ghilain)
-- Twitter: [GhilainIshimwe](https://twitter.com/GhilainIshimwe)
-- LinkedIn: [Ghilain Ishimwe](https://www.linkedin.com/in/ghilain-ishimwe-067a5b1b4/)
+- GitHub: (https://github.com/rotshidzw)
+- Twitter: (https://twitter.com/footballlz )
+- LinkedIn: (https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ghilain/Leaderboard).
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
